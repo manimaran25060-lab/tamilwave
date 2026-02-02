@@ -1,0 +1,119 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f7f7f7;
+  color: #000;
+}
+
+.top-bar {
+  background: #2fa4d9;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+.top-bar h1 {
+  margin: 5px 0;
+  font-size: 22px;
+}
+
+.tagline {
+  font-size: 13px;
+}
+
+.notice {
+  background: #fff3cd;
+  color: #000;
+  padding: 10px;
+  font-size: 14px;
+  border-bottom: 1px solid #ddd;
+}
+
+.content {
+  background: #fff;
+  padding: 12px;
+}
+
+h2 {
+  color: #000;
+  font-size: 16px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 4px;
+}
+
+p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+ul {
+  padding-left: 18px;
+  font-size: 14px;
+}
+
+a {
+  color: #d60000;
+  text-decoration: none;
+}
+
+.telegram-box {
+  margin: 15px 0;
+  text-align: center;
+}
+
+.telegram-box a {
+  display: inline-block;
+  background: #0088cc;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.footer {
+  background: #2fa4d9;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  font-size: 13px;
+}
+
+.footer a {
+  color: #fff;
+  margin: 0 5px;
+}
+
+.folder-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.folder-list li {
+  padding: 10px;
+  border-bottom: 1px dotted #bcd;
+  font-size: 15px;
+}
+
+.folder-list li a {
+  color: #000;
+  text-decoration: none;
+  display: block;
+}
+
+.folder-list li a:hover {
+  background: #f2f8ff;
+}
+
+.folder-icon {
+  margin-right: 8px;
+}
+
+.section-bar {
+  background: #2fa4d9;
+  color: #fff;
+  padding: 8px 10px;
+  font-size: 16px;
+  margin-top: 10px;
+}
