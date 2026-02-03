@@ -1,29 +1,22 @@
 fetch("data/movies-2026.json")
-  .then(response => response.json())
+  .then(res => res.json())
   .then(movies => {
-    const container = document.getElementById("movie-list");
-
-    if (!movies.length) {
-      container.innerHTML = "<p>No movies added yet.</p>";
-      return;
-    }
-
-    let ul = document.createElement("ul");
+    const list = document.getElementById("movie-list");
+    const ul = document.createElement("ul");
 
     movies.forEach(movie => {
-      let li = document.createElement("li");
-      let a = document.createElement("a");
-
-      a.href = movie.telegram;
-      a.target = "_blank";
-      a.textContent = movie.name;
-
-      li.appendChild(a);
+      const li = document.createElement("li");
+      li.innerHTML = `
+        <a href="${movie.telegram}" target="_blank">
+          ${movie.name} (${movie.year})
+        </a>
+      `;
       ul.appendChild(li);
     });
 
-    container.appendChild(ul);
+    list.appendChild(ul);
   })
-  .catch(error => {
-    console.error("Error loading movies:", error);
+  .catch(err => {
+    document.getElementById("movie-list").innerHTML =
+      "<p>Movies loading failed.</p>";
   });
