@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: http://tamilwave.in/sitemap.xml
