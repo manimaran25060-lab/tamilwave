@@ -117,3 +117,31 @@ a {
   font-size: 16px;
   margin-top: 10px;
 }
+
+#movie-list ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 15px;
+}
+
+#movie-list li {
+  padding: 10px 0;
+  border-bottom: 1px dotted #bbb;
+  display: flex;
+  align-items: center;
+}
+
+#movie-list li::before {
+  content: "📁";
+  margin-right: 8px;
+}
+
+#movie-list a {
+  color: #c0392b;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+#movie-list a:hover {
+  text-decoration: underline;
+}
